@@ -57,7 +57,7 @@ export default class CreateRoomPage extends Component {
         guest_can_pause: this.state.guestCanPause,
       }),
     };
-    fetch("/api/create-room", requestOptions)
+    fetch("https://reactappp.herokuapp.com/api/create-room", requestOptions)
       .then((response) => response.json())
       .then((data) => this.props.history.push("/room/" + data.code));
   }
@@ -72,7 +72,7 @@ export default class CreateRoomPage extends Component {
         code: this.props.roomCode,
       }),
     };
-    fetch("/api/update-room", requestOptions).then((response) => {
+    fetch("https://reactappp.herokuapp.com/api/update-room", requestOptions).then((response) => {
       if (response.ok) {
         this.setState({
           successMsg: "Room updated successfully!",

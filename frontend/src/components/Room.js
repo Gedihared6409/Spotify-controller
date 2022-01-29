@@ -34,7 +34,7 @@ export default class Room extends Component {
   }
 
   getRoomDetails() {
-    return fetch("/api/get-room" + "?code=" + this.roomCode)
+    return fetch("https://reactappp.herokuapp.com/api/get-room" + "?code=" + this.roomCode)
       .then((response) => {
         if (!response.ok) {
           this.props.leaveRoomCallback();
@@ -55,13 +55,13 @@ export default class Room extends Component {
   }
 
   authenticateSpotify() {
-    fetch("/spotify/is-authenticated")
+    fetch("https://reactappp.herokuapp.com/spotify/is-authenticated")
       .then((response) => response.json())
       .then((data) => {
         this.setState({ spotifyAuthenticated: data.status });
         console.log(data.status);
         if (!data.status) {
-          fetch("/spotify/get-auth-url")
+          fetch("https://reactappp.herokuapp.com/spotify/get-auth-url")
             .then((response) => response.json())
             .then((data) => {
               window.location.replace(data.url);
@@ -76,7 +76,7 @@ export default class Room extends Component {
   }
 
   getCurrentSong() {
-    fetch("/spotify/current-song")
+    fetch("https://reactappp.herokuapp.com/spotify/current-song")
       .then((response) => {
         if (!response.ok) {
           return {};
@@ -95,7 +95,7 @@ export default class Room extends Component {
       method: "POST",
       headers: { "Content-Type": "application/json" },
     };
-    fetch("/api/leave-room", requestOptions).then((_response) => {
+    fetch("https://reactappp.herokuapp.com/api/leave-room", requestOptions).then((_response) => {
       this.props.leaveRoomCallback();
       this.props.history.push("/");
     });

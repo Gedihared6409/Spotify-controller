@@ -21,7 +21,7 @@ export default class HomePage extends Component {
   }
 
   async componentDidMount() {
-    fetch("/api/user-in-room")
+    fetch("https://reactappp.herokuapp.com/api/user-in-room")
       .then((response) => response.json())
       .then((data) => {
         this.setState({

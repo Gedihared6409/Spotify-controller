@@ -1,4 +1,4 @@
 
-CLIENT_ID = "e92bf49f69ad4dd78fb0bb4669944a86"
-CLIENT_SECRET = "0dddc3e7a3854d288fcac00675210766"
-REDIRECT_URI = "http://127.0.0.1:8000/spotify/redirect"
+CLIENT_ID = "cc2853e5d25e417ab8612c1f3b7ad293"
+CLIENT_SECRET = "1cfb40a0fb8c45a3ba88f3ebd6bf224f"
+REDIRECT_URI = "https://reactappp.herokuapp.com/spotify/redirect"

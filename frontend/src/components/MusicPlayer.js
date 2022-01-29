@@ -20,7 +20,7 @@ export default class MusicPlayer extends Component {
       method: "POST",
       headers: { "Content-Type": "application/json" },
     };
-    fetch("/spotify/skip", requestOptions);
+    fetch("https://reactappp.herokuapp.com/spotify/skip", requestOptions);
   }
 
   pauseSong() {
@@ -28,7 +28,7 @@ export default class MusicPlayer extends Component {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
     };
-    fetch("/spotify/pause", requestOptions);
+    fetch("https://reactappp.herokuapp.com/spotify/pause", requestOptions);
   }
 
   playSong() {
@@ -36,7 +36,7 @@ export default class MusicPlayer extends Component {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
     };
-    fetch("/spotify/play", requestOptions);
+    fetch("https://reactappp.herokuapp.com/spotify/play", requestOptions);
   }
 
   render() {
