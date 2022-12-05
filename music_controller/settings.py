@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'music_controller.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'discord28',
+        'NAME': 'discord30',
         'USER': 'ali',
     'PASSWORD':'ali',
     }

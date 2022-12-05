@@ -60,7 +60,6 @@ class JoinRoom(APIView):
 
 class CreateRoomView(APIView):
     serializer_class = CreateRoomSerializer
-    print('ali')
 
     def post(self, request, format=None):
         if not self.request.session.exists(self.request.session.session_key):
