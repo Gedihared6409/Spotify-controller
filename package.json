@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://reactappp.herokuapp.com/",
+  "homepage": "https://musiccontroller.herokuapp.com/",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
