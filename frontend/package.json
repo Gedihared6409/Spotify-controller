@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "musiccontroller-6973c97f0a15.herokuapp.com/",
+  "homepage": "https://music-ontroller.vercel.app/",
   "scripts": {
     "dev": "webpack --mode development ",
     "build": "webpack --mode production"
