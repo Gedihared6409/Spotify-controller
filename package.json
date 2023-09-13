@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://music-ontroller.vercel.app/",
+  "homepage": "https://Spotify-controller.vercel.app/",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
